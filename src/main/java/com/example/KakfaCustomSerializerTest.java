@@ -1,7 +1,7 @@
 package com.example;
 
 /**
- * Created by V691139 on 11/25/2016.
+ * Created by Amarendra Kumar on 11/25/2016.
  */
 public class KakfaCustomSerializerTest {
 

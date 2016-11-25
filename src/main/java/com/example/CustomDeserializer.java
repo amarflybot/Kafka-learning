@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created by V691139 on 11/25/2016.
+ * Created by Amarendra Kumar on 11/25/2016.
  */
 public class CustomDeserializer implements Deserializer<CustomObject> {
 

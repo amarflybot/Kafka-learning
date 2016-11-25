@@ -8,7 +8,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import java.util.Properties;
 
 /**
- * Created by V691139 on 11/21/2016.
+ * Created by Amarendra Kumar on 11/21/2016.
  */
 public class KafkaProducerTest {
 

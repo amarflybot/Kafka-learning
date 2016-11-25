@@ -7,7 +7,7 @@ import org.apache.kafka.common.serialization.Serializer;
 import java.util.Map;
 
 /**
- * Created by V691139 on 11/25/2016.
+ * Created by Amarendra Kumar on 11/25/2016.
  */
 public class CustomSerializer implements Serializer<CustomObject> {
     /**

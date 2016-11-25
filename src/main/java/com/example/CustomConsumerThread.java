@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- * Created by V691139 on 11/25/2016.
+ * Created by Amarendra Kumar on 11/25/2016.
  */
 public class CustomConsumerThread implements Runnable {
 
