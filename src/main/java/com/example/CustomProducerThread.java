@@ -49,14 +49,9 @@ public class CustomProducerThread implements Runnable {
     public void run() {
 
         List<CustomObject> customObjectList = new ArrayList<>();
-        customObjectList.add(new CustomObject("Amar",0));
-        customObjectList.add(new CustomObject("Amar1",1));
-        customObjectList.add(new CustomObject("Amar2",2));
-        customObjectList.add(new CustomObject("Amar3",3));
-        customObjectList.add(new CustomObject("Amar4",4));
-        customObjectList.add(new CustomObject("Amar5",5));
-        customObjectList.add(new CustomObject("Amar6",6));
-
+        for (int i = 0; i < 10000; i++) {
+            customObjectList.add(new CustomObject("Key-"+i,i));
+        }
         customObjectList.stream().forEach(customObject -> {
             producer.send(new ProducerRecord<>("my-topics", customObject.getName(), customObject),
                     (metadata, exception) -> {
@@ -65,11 +60,11 @@ public class CustomProducerThread implements Runnable {
                         }
                         System.out.println("Sent : "+ customObject);
                     });
-            try {
+            /*try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
         });
 
         producer.close();

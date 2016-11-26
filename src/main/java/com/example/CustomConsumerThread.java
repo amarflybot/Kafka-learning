@@ -60,6 +60,7 @@ public class CustomConsumerThread implements Runnable {
                 CustomObject customObject = stringCustomObjectConsumerRecord.value();
                 System.out.println("Received : "+customObject);
             });
+            consumer.close();
         }
     }
 }
